@@ -69,7 +69,7 @@
 }
 .top-area {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 3fr 1fr;
 }
 .bottom-area {
 	display: grid;
@@ -78,7 +78,6 @@
 .top-area,
 .bottom-area {
 	align-items: center;
-	padding-left: 30px;
 }
 .search {
 	border-radius: 20px;
@@ -97,4 +96,21 @@
 	gap: 10px;
 	align-items: center;
 	justify-self: center;
+}
+.top-profile-area {
+	display: grid;
+	grid-template-columns: 30px 60px 200px;
+	align-items: center;
+	justify-self: center;
+}
+.profile-img {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+.name {
+	color: black;
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+	font-weight: 600;
 }
