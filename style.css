@@ -22,7 +22,7 @@
 }
 .nav-container {
 	padding-left: 20px;
-	padding-top: 50px;
+	margin-top: 20px;
 	align-items: center;
 	display: grid;
 	grid-template-columns: 0.5fr 3fr;
@@ -31,7 +31,7 @@
 
 .misc-container {
 	padding-left: 20px;
-	padding-top: 100px;
+	margin-top: 50px;
 	display: grid;
 	grid-template-columns: 0.5fr 3fr;
 	grid-template-rows: repeat(3, 50px);
@@ -42,6 +42,9 @@
 	font-weight: 500;
 	color: white;
 	text-decoration: none;
+}
+.nav-links:hover {
+	color: #186f9e;
 }
 .logo-text {
 	font-family: "Roboto", sans-serif;
@@ -59,4 +62,24 @@
 	color: white;
 	padding: 15px 30px;
 	border: none;
+}
+.header-container {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+.top-area {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+.bottom-area {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+}
+.search {
+	border-radius: 20px;
+	padding: 10px 10px;
+	width: 500px;
+	border: none;
+	background-color: grey;
+	color: white;
 }
