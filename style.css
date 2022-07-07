@@ -50,3 +50,13 @@
 	text-decoration: none;
 	color: white;
 }
+.btn-blue {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 20px;
+	background-color: #1992d4;
+	color: white;
+	padding: 15px 30px;
+	border: none;
+}
