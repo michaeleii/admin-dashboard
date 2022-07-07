@@ -4,13 +4,13 @@
 }
 .grid-container {
 	display: grid;
-	grid-template-columns: 280px 5fr;
+	grid-template-columns: 280px 2fr;
 }
 
 .sidebar {
 	background-color: #1992d4;
-	height: 100vh;
-	grid-row-end: span 3;
+	height: 961px;
+	grid-row-end: span 4;
 	display: grid;
 	grid-template-rows: 100px 300px 300px;
 }
@@ -70,7 +70,7 @@
 .header-container {
 	display: grid;
 	grid-template-rows: 100px 100px;
-	height: 22vh;
+	height: 1fr;
 }
 .top-area {
 	display: grid;
@@ -151,7 +151,7 @@
 .main-content {
 	padding-left: 30px;
 	background-color: #e2e8f0;
-	height: 78vh;
+	height: calc(961px - 200px);
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -168,6 +168,11 @@
 .project-area {
 	grid-row-end: span 3;
 }
+.annoucement-area,
+.trending-area {
+	padding-left: 40px;
+	padding-right: 40px;
+}
 .card {
 	background-color: #ffffff;
 	border-radius: 10px;
@@ -183,6 +188,7 @@
 	padding-bottom: 5px;
 }
 .project-details {
+	color: #636363;
 	font-size: 14px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
@@ -210,3 +216,52 @@
 .share:hover {
 	color: rgb(65, 212, 78);
 }
+.annoucement-card {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-rows: repeat(3, 120px);
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+.annoucement {
+	padding-left: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 300px;
+}
+
+.black-border {
+	border-bottom: rgb(46, 46, 46) solid 1px;
+}
+.annoucement-title {
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	padding-bottom: 5px;
+}
+.annoucement-details {
+	color: #636363;
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.trending-card {
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: auto auto;
+	font-family: "Roboto", sans-serif;
+}
+.right {
+	justify-self: end;
+}
+.trending-username {
+	font-size: 16px;
+}
+.trending-bio;
