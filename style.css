@@ -74,12 +74,12 @@
 }
 .bottom-area {
 	display: grid;
-	grid-template-columns: 2fr 2fr;
+	grid-template-columns: 1fr 2fr;
 }
 .top-area,
 .bottom-area {
 	align-items: center;
-	padding-left: 10px;
+	padding-left: 100px;
 }
 .search {
 	border-radius: 20px;
@@ -97,7 +97,6 @@
 	grid-template-columns: 30px auto;
 	gap: 10px;
 	align-items: center;
-	justify-self: center;
 }
 .top-profile-area {
 	display: grid;
@@ -111,9 +110,31 @@
 	width: 50px;
 	border-radius: 50%;
 }
+.profile-img-large {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+}
 .name {
 	color: black;
 	font-family: "Roboto", sans-serif;
 	font-size: 20px;
 	font-weight: 600;
+}
+.intro-text {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+.username-text {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+}
+.bottom-user-area {
+	display: grid;
+	grid-template-columns: 90px auto;
+	align-items: center;
+}
+.bottom-btn-area {
+	justify-self: center;
 }
