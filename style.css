@@ -65,21 +65,36 @@
 }
 .header-container {
 	display: grid;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 100px 100px;
 }
 .top-area {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 .bottom-area {
 	display: grid;
 	grid-template-columns: 2fr 2fr;
 }
+.top-area,
+.bottom-area {
+	align-items: center;
+	padding-left: 30px;
+}
 .search {
 	border-radius: 20px;
 	padding: 10px 10px;
-	width: 500px;
+	width: 800px;
 	border: none;
-	background-color: grey;
-	color: white;
+	background-color: #e2e8f0;
+	color: black;
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+.top-search-area {
+	display: grid;
+	grid-template-columns: 30px auto;
+	gap: 10px;
+	align-items: center;
+	justify-self: center;
 }
